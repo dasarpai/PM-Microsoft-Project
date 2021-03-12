@@ -1,0 +1,322 @@
+Questions
+
+Resource Availability Table
+Available from: By default is project start date
+Available to: By default is project start date
+It does not calculate work for you without resource!
+What is %alloc field on timescale?
+unit of work is different?
+unit rate is different ?
+
+What is the difference between Resource Availability  and Work Contour
+Lion, Back Loaded, Front Loaded, Turtle
+Resource Availability - Adjusts maximum unit availablity throughout project lifecycle
+Work contour- Varying level of work on any activity throughout assignment
+
+Generic skills is account of skills required to complete the task.
+
+Work Resource: People, equipment or facilities that are assigned to a task and not consumed during the task
+Material: Consumable resource
+Cost: To track budgetary items such as travel cost, entertainment, foods, communication,
+
+estimated duration vs set duration
+usage of priority?
+how many type of calendar- base, project, resource, task
+order of calendar
+Type and number of type dependencies
+Type of constraints
+
+info reqd to track progress on project- st date, end date, duration, cost, work
+planned info, scheduled info, actual info, remaining info, variance info, 
+
+MSO, MFO, ASAP, SNET, FNLT, ALAP
+
+Understanding constraints and dependencies
+
+Split of a task in resource levelling
+
+
+Driving resource: The resource whose assignment to a task determines the finish date of the task
+How many type of task there 
+
+		Work	Material	Cost
+Availablity Table	Y	N	N
+Rate Table	Y	Y	N
+
+
+--------------------------------------------------------------------------------------------------------
+Done- Following points has been considered in training material.
+
+New Views Created
+
+x-Intial Entry
+Duration
+Work
+Cost
+Start Date
+Finish date
+
+x-Baseline View
+Baseline Duration
+Baseline Work
+Baseline Cost
+Baseline Start Date
+Baseline Finish Date
+
+x-Progress View
+Baseline Duration
+Actual Duration
+Remaining Duration
+Duration
+Baseline Work
+Actual Work
+Remaining Work
+Work
+Baseline Cost
+Actual Cost
+Remaining Cost
+Cost
+Baseline Start Date
+Baseline Finish Date
+Actual Start Date
+Actual Finish Date
+------------------------------------------------------------------------------
+earned value of task not directly related to actual work.
+In this situation if you change the actual work earned value get updated automatically which is incorrect.
+
+some componet building in 10 days. 8 days some break through to show something to customer. But %complete is 80%, however physical % complete is 0%
+on 9th day first draft can be shown to customer so %physcial complete is 50% but % complete is 90%
+----------------------------------------
+
+MSP Assumes that if 24 hours work should be completed by wed (i.e. mon, tue and wed) and you are doing status reporting on wed then 24 work has been done. In other words 24 hours work has been done by this time. Now at the time of baseling if rate was $10/ hour then BCWP is $240. Because timephased BCWP is calculated using %complete rather than %physical complete. Therefore it done not matter how much physically has been completed but how much should have been completed by this time.
+
+There is task which need to be done on mon,tue,wed (24 hours) @ 10/hours. Cost for completing the task is @240. -- Baselined
+BCWS for mon, tue,wed is $80 (for each day)
+On mon you completed 12 hours work instead of 8 hours. So BCWP for mon is $120 not $80. This is calcualted on baselined information i.e. $10/hours. NOTE: Baseline rates are not saved but using baseline cost and work for the activity this can be calcualted and used for mulitiplication. So BCWP using %complete is 50%. Because % person of the work/money planned for this actvity has been spent by mon evening itself.
+The problem with BCWP calculation using %complete till last moment it assumes that work can be done within original estimates and therefore remaining work is calcualted like baseline work - actual work 
+BCWP calculation using %physical complete updates status either using completion of work or remaining work after the physcial check/verification rather than original estimates.
+
+But if you ask engineer that how much work is done and he informs you that only 25% of the work is done after 12 on monday. It means he is telling you the status based of %physcial complete. Thus BCWP using %physical complete is $60 and $120.
+Using %Complete: Remaining work on Monday is 12 hours (because total work was 24 and work done on Monday is 12 hours so 24-12 = 12)
+Using %physical complete: Remaining work is $240-$60 = $180. Provided delay in future can be stopped.
+
+On Monday the money incurred to complete the task was $150. This is called ACWP
+
+If BCWP is calcualted based on %physcial complete then physcial updatation is required. In that case you need to change remaining task
+
+It is possible that EV = $256 but AC=$64 (by investing $64 you realised the value of work which was originally estiamted for $256)
+
+
+----------------------------
+work = remaining work + actual work
+
+Cost= Remaining Cost + Actual Cost
+
+Remaining Cost = (Remaining Work * Standard Rate) + Remaining Overtime Cost
+
+
+Actual Cost = (Actual Work * Standard Rate) + (Actual Overtime Work * Overtime Rate) + Resource Per Use Costs + Task Fixed Cost
+------------------------------------------------------------------------------------------
+A fool with tool is still fool.. so we must learn the tool
+A hardworker in the absense of tool is hardly workly effectivly
+
+MS Project is a tool to manage the information on project.
+Use the tool to make decisions..... Do not make decisions base of guts only.
+
+All activities are not of same type. some are fixed duration, others are fixed effort or fixed units.
+If you do not have time to update the information on tool train somebody on the team. It is extremely important to update it it does not matter who do that.
+Base your MS Project Structure using WBS
+Think what do you want to track and upto what level of details
+
+Task Administration
+Resource Administration
+Reporting
+Budgeting
+Follow up of progress
+
+Define Activities & Its types
+Sequence Activities
+Define Deadlines
+Define Resources Required
+Define duration
+Define cost
+Tune project schedule
+Baselien scheulde
+
+Duration equation in MS Project
+Balancing workload
+Assign Resources to Tasks
+Tracking Tool
+Introduction to Views
+Non-working Days
+Recurring Task
+Individual working hours
+Baseline
+Resources
+Link Types
+Default Filters
+Task Drivers Pane
+Actual Progress
+Actual Start & Finish
+
+-----------------------------------------------------------------------------------------
+MSP Completed cases
+1- In an baselined task where some resource is working with some material for some period but he realises after some time this material cannot work and some better quality material is required to complete the work. Due to this reason there is some wastage of existing material and high quality material comes at high price. But remaining low quality material you will not be able to use in project now. Work done till now need to be redone, however work can be completed on time. How do manage this case in MSP?
+
+2- A worker has to use four qualities of same material for same work for same duration to complete the work. How do you create this activity and assign resources in this case in MSP?
+
+3- In your project material M of 3 different quality is required on different date. You create your project plan, applied these resources and baseline your project plan with $100,000. While working on project a resource reports that some more material is required to complete the work. Project manager also notices that rate of material has changed when he procured it from market. Besides this he need more material to complete the work. Due to this reason ACWP will be higher and BCWP. How do manage this case in MSP?
+
+4- In a baselined project a new resource is required to complete the baselined task, old resource is leaving the project and will not be available after a certain date. This resource comes at higher rate then earlier one. How do you manage this case in MSP? What is impact on exisiting work assigned to him and work competed by him. What is the impact on baseline cost of existing work?
+
+5-BA will visit US office on weekends. it will cost project $1,000 for fare, 1,000 for food/local transport/lodging. BA will be available on 50% on your project after second week of reaching to us. In the departing month he will work 80 hours on the project @ $50/hours. he will take 2 days leave towards some weekend to meet his friends.
+
+6- You want to use 10 engineers on some task but you donot know who are these people?
+7- A person spending 40% of his time on some organizational training (project need not to pay for this). As a result of this 60% of his time is available for project activities as Units. If you do 60% allocation you mean that 3 days of the week he is completely available for the project activities. How to manage this case in MSP?
+8- A resource is available 50% of his time on some day. Therefore he should planning should be first half of the day not second half of the day. How do you manage this case in MSP?
+
+9- Every alternative Fri there is 1 hour customer call with whole team
+10- Assign a resource for many activities over a period of time, without overloading him?
+11- Assign a resource for different activities for which he charges different rate. But ensure that not overloading happens.
+-----------------------------------------------------------------
+Advance Concepts
+Recurssive Task
+Define Views
+Define Timescales
+Define Filters
+Define Groups
+Define Custom Settings of Calculation, Calendar, Resource Levelling, View, Schedule
+WBS Code
+RBS Code
+Format Changing- Color, Font, Style, Bar, Gridlines
+Sub Project/ Master Projects
+Resource Pool
+Creating Visual Reports
+Benefits of Notes to Task and Resources
+Print Preview
+Resource Levelling
+Adjusting assignments
+Entering actuals
+Earned Value
+Customized Fields & Indicators/lookup table, formule etc.
+Custom Fields
+Creating templates
+Updating global values and views in MSP tool
+Critical Path
+Resource Replacement
+Resource Availability
+Resource calendar
+Task calendar
+Hyperlink
+Assignment owner
+Resource group - like plumbers, architect, engineers, electricians
+---------------------------------
+Connecting to Project Server
+View work allocation
+Enter Timesheet
+Enter Risk & Related Plan
+Enter Issue & Related Strategy
+Task Status Update
+Deliverables
+Manage Deliverables Dependencies
+Update Project Progress
+Request Project Status reports
+Data Analysis
+Project Documents
+Connecting to outlook 
+Updating status from Outlook to Project Server and MSP
+
+--------------------------------------------------------------------------------------------------
+Basic Concepts
+What is project
+What are resources & its types. Basic attributes
+What are task/activities & its types. Basic attributes
+Setup Project
+Setup Project Calendar
+Create WBS
+Time Management Knowledge Area
+	Identify Activities
+	Sequence Activities
+	EAR
+	EAD
+	DS
+Entering Actuals
+Dealing with multiple units of measurment of task and resources (m,h,d,w,month / kg, ltr, bag, pieces)
+View
+Timescale
+Filters
+Groups
+Visual Reports
+Snapshot
+Table Reports
+Task Drivers
+Split
+Set & Updating Baselines
+Resource Assignments
+Defining Predecessor & Successor
+Defining Lead and Lag
+Define Constraints & Deadlines
+
+
+------------
+
+
+Advance Concepts
+How to deal with planning and actuals of the assignments on a particular week, day, hour?
+
+Exercise one- 
+Part1
+Create a task T1 & set the duration as 5 days, starting date on monday of that week.
+Create a resource R1 & set the availablity as 40%, start date on monday and end date friday of that week
+Assign this resource to T1
+Insert work column in gantt view
+
+Observe value in work column.
+Change work column to 40 hours. Observer duration and resource column
+
+Undo the changes
+Switch to resource graph view 
+Observe allocation of resource throughout the week and over allocation if any.
+If 40% for you mean that resource is available for 2 days in a week then how will to allocate the resource?
+
+Switch to Task usage view and observer hours allocated to the resource in this week
+Enter 8 hours for monday and 8 hours for tuesday and remove other entries. This is equal to 16 hours a week, i.e. 40%
+Switch to resource graph view 
+Observe allocation of resource throughout the week and over allocation if any.
+It means marking 40% for 2 days on weekly basis does not work
+
+Part2
+Create a task T1 & set the duration as 1 days, starting date on monday of that week.
+Create a resource R1 & set the availablity as 25%, start date on monday and end date friday of that week
+Assign this resource to T1
+Insert work column in gantt view
+
+Observe value in work column.
+Change work column to 8 hours. Observer duration and resource column
+
+Undo the changes
+Switch to resource graph view 
+Observe allocation of resource throughout the week and over allocation if any.
+If 25% for you mean that resource is available for 2 hours in a day then how will to allocate the resource for first two hours in morning?
+
+Switch to Task usage view and change timescale to days and hours.
+Observer hours allocated to the resource in Monday
+Enter 1 hours at 8 am and 1 hour at 9 am and remove other entries. This is equal to 2 hours a week, i.e. 25%
+Switch to resource graph view 
+Observe allocation of resource throughout the day and over allocation if any.
+It means marking 25% of the day does not mean that 2 hours from the time day starts.
+
+---------------------------------------------------------------------------------------------------------------------------------
+How to enter actual of resource utilization for a particular week, day, hour?
+Task Usage View
+
+How to deal with different rates of same resource for different services or different periods
+How to deal with overtime rates of a resource
+Resource sheet to enter different rates for different services and different periods/ Resource Rate Table
+
+Resource Usage Table to check the allocation on daily basis and check the cost spent
+---------------------------------------------------------------------------------------------------------------------------------
+
+Project Guide
+Highlight Changer
+Zoom
